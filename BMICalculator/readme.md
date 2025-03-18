@@ -1,4 +1,6 @@
 Kalkulator BMI - s25944
 
-https://github.com/user-attachments/assets/a450df85-7358-442b-903e-76f6733660e0
+
+
+https://github.com/user-attachments/assets/5ca5f3e7-dbe1-437e-a045-0dbf67ad53a9
 
