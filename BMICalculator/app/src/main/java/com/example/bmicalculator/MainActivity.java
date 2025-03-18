@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         Button myButton = findViewById(R.id.button);
         EditText heightInput = findViewById(R.id.heightInput);
         EditText weightInput = findViewById(R.id.weightInput);
-        TextView resultText = findViewById(R.id.result);
+        TextView resultNumber = findViewById(R.id.resultNumber);
+        TextView resultText = findViewById(R.id.resultText);
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,8 +48,16 @@ public class MainActivity extends AppCompatActivity {
 
                 String formattedBmi = String.format("%.2f", bmi);
 
-                resultText.setText("BMI: " + formattedBmi);
+                resultNumber.setText("BMI: " + formattedBmi);
+                resultText.setText(getBMICategory(bmi));
             }
         });
+    }
+
+    public static String getBMICategory(double bmi) {
+        if (bmi < 18.5) return "Niedowaga";
+        if (bmi < 25) return "Optimum";
+        if (bmi < 30) return "Nadwaga";
+        return "Otyłość";
     }
 }
