@@ -10,8 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BMICalculator"
+        android:theme="@style/SplashTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".KcalCalculatorFragment"
+            android:exported="false"
+            android:label="@string/title_activity_kcal_calculator"
+            android:theme="@style/SplashTheme" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

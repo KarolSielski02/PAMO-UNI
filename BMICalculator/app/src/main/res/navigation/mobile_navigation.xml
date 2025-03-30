@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/bmiFragment">
+
+    <!-- BMI Fragment -->
+    <fragment
+        android:id="@+id/bmiFragment"
+        android:name="com.example.bmicalculator.BmiFragment"
+        android:label="BMI Calculator"
+        tools:layout="@layout/fragment_bmi" />
+
+    <!-- Kcal Calculator Fragment (future) -->
+    <fragment
+        android:id="@+id/kcalCalculatorFragment"
+        android:name="com.example.bmicalculator.KcalCalculatorFragment"
+        android:label="Kcal Calculator"
+        tools:layout="@layout/fragment_kcal_calculator" />
+
+    <fragment
+        android:id="@+id/dietRecomendationFragment"
+        android:name="com.example.bmicalculator.DietRecommendationFragment"
+        android:label="fragment_diet_recomendation"
+        tools:layout="@layout/fragment_diet_recomendation" />
+</navigation>
