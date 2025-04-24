@@ -17,6 +17,13 @@ SplashScreen:<br />
 Monkey:<br />
 ![image](https://github.com/user-attachments/assets/e02de160-611f-4520-8744-07d6a9de19dc)
 
+Naprawione błędy statycznej analizy:</br>
+Przed:<br />
+<img width="1088" alt="image" src="https://github.com/user-attachments/assets/9278dbfd-9eac-460a-a864-84cf67c461bd" /><br />
+Po:<br />
+<img width="1075" alt="image" src="https://github.com/user-attachments/assets/de55a30c-d5c3-4c19-bd6c-244bb09cda73" /><br />
+
+
 
 
 
