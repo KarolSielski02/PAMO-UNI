@@ -21,7 +21,6 @@ public class KcalCalculatorFragment extends Fragment {
     private Spinner activityInput;
     private TextView resultText;
     private String selectedActivityLevel;
-    private Button calculateButton;
     private SharedViewModel sharedViewModel;
 
     @Override
@@ -33,7 +32,7 @@ public class KcalCalculatorFragment extends Fragment {
         ageInput = view.findViewById(R.id.kc_ageInput);
         activityInput = view.findViewById(R.id.kc_activityInput);
         resultText = view.findViewById(R.id.kc_resultText);
-        calculateButton = view.findViewById(R.id.kc_calculateButton);
+        Button calculateButton = view.findViewById(R.id.kc_calculateButton);
 
         loadActivityLevels();
 
@@ -42,24 +41,21 @@ public class KcalCalculatorFragment extends Fragment {
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                calculateCalories();
+                handleCalculateButton();
             }
         });
 
         return view;
     }
 
-    private void calculateCalories() {
+    private void handleCalculateButton() {
         try {
             int height = Integer.parseInt(heightInput.getText().toString());
             int weight = Integer.parseInt(weightInput.getText().toString());
             int age = Integer.parseInt(ageInput.getText().toString());
 
             // Harris-Benedict formula for men
-            double bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
-
-            double activityMultiplier = getActivityMultiplier(selectedActivityLevel);
-            double dailyCalories = bmr * activityMultiplier;
+            double dailyCalories = KcalCalculatorFragmentUtils.calculateDailyCalories(height, weight, age, selectedActivityLevel);
 
             sharedViewModel.setDailyCalories(dailyCalories);
 
@@ -69,18 +65,6 @@ public class KcalCalculatorFragment extends Fragment {
             resultText.setText(getString(R.string.invalid_input));
         }
     }
-
-    private double getActivityMultiplier(String activityLevel) {
-        switch (activityLevel) {
-            case "Sedentary (little/no exercise)": return 1.2;
-            case "Light (1-3 days/week)": return 1.375;
-            case "Moderate (3-5 days/week)": return 1.55;
-            case "Active (6-7 days/week)": return 1.725;
-            case "Very Active (athlete)": return 1.9;
-            default: return 1.2;
-        }
-    }
-
 
     private void loadActivityLevels() {
         Resources res = getResources();

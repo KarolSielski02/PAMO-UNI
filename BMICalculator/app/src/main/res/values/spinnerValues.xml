@@ -2,9 +2,9 @@
 <resources>
     <string-array name="activity_levels">
         <item>Sedentary (little/no exercise)</item>
-        <item>Light (1-3 days/week)</item>
-        <item>Moderate (3-5 days/week)</item>
-        <item>Active (6-7 days/week)</item>
+        <item>Light (1–3 days/week)</item>
+        <item>Moderate (3–5 days/week)</item>
+        <item>Active (6–7 days/week)</item>
         <item>Very Active (athlete)</item>
     </string-array>
 </resources>

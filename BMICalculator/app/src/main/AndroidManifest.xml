@@ -16,7 +16,7 @@
             android:name=".KcalCalculatorFragment"
             android:exported="false"
             android:label="@string/title_activity_kcal_calculator"
-            android:theme="@style/SplashTheme" />
+            android:theme="@style/Theme.BMICalculator" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

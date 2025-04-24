@@ -1,10 +1,10 @@
 package com.example.bmicalculator;
 
 public class Recipe {
-    private String name;
-    private String description;
-    private int minCalories;
-    private int maxCalories;
+    private final String name;
+    private final String description;
+    private final int minCalories;
+    private final int maxCalories;
 
     public Recipe(String name, String description, int minCalories, int maxCalories) {
         this.name = name;

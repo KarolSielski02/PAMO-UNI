@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DietRecommendationFragment extends Fragment {
-    private SharedViewModel sharedViewModel;
     private double userCalories = 2000.0;
 
     @Override
@@ -28,7 +27,7 @@ public class DietRecommendationFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         TextView recommendationTextView = view.findViewById(R.id.recommendationText);
-        sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+        SharedViewModel sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
         sharedViewModel.getDailyCalories().observe(getViewLifecycleOwner(), calories -> {
             userCalories = calories;
             displayRecommendations(userCalories, recommendationTextView);
