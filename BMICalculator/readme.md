@@ -14,6 +14,10 @@ https://github.com/user-attachments/assets/1013dd0b-5e73-421d-8eb2-9b88fa7b3775
 SplashScreen:<br />
 <img width="270" alt="image" src="https://github.com/user-attachments/assets/98e799b6-6ef8-479b-b64f-0f490f71b322" />
 
+Monkey:<br />
+![image](https://github.com/user-attachments/assets/e02de160-611f-4520-8744-07d6a9de19dc)
+
+
 
 
 
