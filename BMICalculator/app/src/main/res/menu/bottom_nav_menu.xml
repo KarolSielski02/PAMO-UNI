@@ -16,4 +16,14 @@
         android:id="@+id/dietRecomendationFragment"
         android:icon="@drawable/baseline_fastfood_24"
         android:title="@string/diets" />
+
+    <item
+        android:id="@+id/todoMain"
+        android:icon="@drawable/baseline_check_box_24"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/BMIChartActivity"
+        android:icon="@drawable/baseline_add_chart_24"
+        android:title="BMI Chart" />
 </menu>

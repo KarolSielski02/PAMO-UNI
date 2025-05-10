@@ -10,7 +10,11 @@
         android:id="@+id/bmiFragment"
         android:name="com.example.bmicalculator.BmiFragment"
         android:label="BMI Calculator"
-        tools:layout="@layout/fragment_bmi" />
+        tools:layout="@layout/fragment_bmi" >
+        <action
+            android:id="@+id/action_bmiFragment_to_todoMain"
+            app:destination="@id/todoMain" />
+    </fragment>
 
     <!-- Kcal Calculator Fragment (future) -->
     <fragment
@@ -24,4 +28,13 @@
         android:name="com.example.bmicalculator.DietRecommendationFragment"
         android:label="fragment_diet_recomendation"
         tools:layout="@layout/fragment_diet_recomendation" />
+    <activity
+        android:id="@+id/todoMain"
+        android:name="com.example.bmicalculator.TodoMain"
+        android:label="todo_main"
+        tools:layout="@layout/todo_main" />
+    <activity
+        android:id="@+id/BMIChartActivity"
+        android:name="com.example.bmicalculator.BMIChartActivity"
+        android:label="BMIChartActivity" />
 </navigation>

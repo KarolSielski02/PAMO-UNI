@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,6 +18,16 @@
             android:name=".KcalCalculatorFragment"
             android:exported="false"
             android:label="@string/title_activity_kcal_calculator"
+            android:theme="@style/Theme.BMICalculator" />
+        <activity
+            android:name=".TodoMain"
+            android:exported="false"
+            android:label="Todo"
+            android:theme="@style/Theme.BMICalculator" />
+        <activity
+            android:name=".BMIChartActivity"
+            android:exported="false"
+            android:label="BMI Chart Activity"
             android:theme="@style/Theme.BMICalculator" />
         <activity
             android:name=".MainActivity"
