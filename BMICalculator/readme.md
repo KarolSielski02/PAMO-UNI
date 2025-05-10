@@ -5,7 +5,7 @@ Prosty projekt kalkulatora BMI na zajęcia z programowania mobilnego.
 ## Ekrany aplikacji
 
 ### Podstawowe widoki
-![Kalkulator](https://github.com/user-attachments/assets/1013dd0b-5e73-421d-8eb2-9b88fa7b3775)
+https://github.com/user-attachments/assets/1013dd0b-5e73-421d-8eb2-9b88fa7b3775
 ![Wynik BMI](https://github.com/user-attachments/assets/2e3cf299-c472-4d95-990b-642aaee3f286)
 ![Informacje](https://github.com/user-attachments/assets/ea53d6f0-5386-4c52-8025-ca3c3a90e60e)
 ![Dane użytkownika](https://github.com/user-attachments/assets/90e81084-12a7-4449-afed-bdefe9c87e24)
